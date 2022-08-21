@@ -1,0 +1,20 @@
+[package]
+name = "concrete_beam"
+version = "0.1.0"
+# author = ["Abdul Rochim <abdul.rochim.civeng@gmail.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[lib]
+name = "mylib"
+path = "src/lib/lib.rs"
+
+[[bin]]
+name = "mybin"
+path = "src/bin/main.rs"
+
+
+[dependencies]
+"example_folder" = { path = "../example_folder" }

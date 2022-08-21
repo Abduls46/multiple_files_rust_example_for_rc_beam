@@ -1,0 +1,18 @@
+[package]
+name = "example_folder"
+version = "0.1.0"
+# author = ["Abdul Rochim <abdul.rochim.civeng@gmail.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# "concrete_beam" = { path = "../concrete_beam" } # cannot cyclic dependency
+
+[lib]
+name = "lib_example_folder"
+path = "src/lib_ex/lib_example.rs"
+
+[[bin]]
+name = "bin_example_folder"
+path = "src/main.rs"
